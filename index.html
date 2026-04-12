@@ -6,15 +6,19 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(to right, #1877f2, #42b72a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .container {
             width: 400px;
-            margin: 50px auto;
             background: #fff;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
         h2 {
             text-align: center;
@@ -81,6 +85,9 @@
             </select>
         </div>
 
+        <label>Place of Birth</label>
+        <input type="text" placeholder="Enter your birthplace" required>
+
         <label>Gender</label>
         <div class="row">
             <label><input type="radio" name="gender"> Male</label>
@@ -88,7 +95,6 @@
             <label><input type="radio" name="gender"> Custom</label>
         </div>
 
-        <!-- NEW: Country -->
         <label>Country</label>
         <select required>
             <option value="">Select your country</option>
@@ -99,7 +105,6 @@
             <option>India</option>
         </select>
 
-        <!-- NEW: Grade -->
         <label>Grade</label>
         <select required>
             <option value="">Select your grade</option>
